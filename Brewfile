@@ -20,8 +20,6 @@ brew "go"
 brew "imagemagick"
 # Platform built on V8 to build network applications
 brew "node", link: false
-# Create, run, and share large language models (LLMs)
-brew "ollama"
 # Zsh prompt for Astronauts
 brew "spaceship"
 # Internet file retriever
@@ -36,6 +34,8 @@ brew "zsh"
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+# Amazon Lightsail CLI Extensions
+brew "aws/tap/lightsailctl"
 # App to build and share containerised applications and microservices
 cask "docker"
 cask "font-sf-mono-nerd-font-ligaturized"
