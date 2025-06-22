@@ -1,4 +1,4 @@
-# adi's zshrc
+# adi's .zshrc
 
 # ohmyzsh config
 export ZSH="$HOME/.oh-my-zsh"
@@ -6,19 +6,15 @@ ZSH_THEME="alanpeabody"
 zstyle ':omz:update' mode auto
 source $ZSH/oh-my-zsh.sh
 
-# aliases
-alias zshconfig="vi ~/.dotfiles/.zshrc"
-
-# nvm config
-export PATH="$PATH:/usr/local/share/npm/bin"
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # plugins
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/opt/spaceship/spaceship.zsh
+
+# zsh-autosuggest config
+ZSH_AUTOSUGGEST_STRATEGY=(completion history)
+ZSH_AUTOSUGGEST_HISTORY_IGNORE="cd *"
+ZSH_AUTOSUGGEST_COMPLETION_IGNORE="git commit *"
 
 # miniconda config
 # >>> conda initialize >>>
@@ -35,6 +31,12 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+# nvm config
+export PATH="$PATH:/usr/local/share/npm/bin"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # aliases
 alias zconfig="vi ~/.dotfiles/.zshrc"
