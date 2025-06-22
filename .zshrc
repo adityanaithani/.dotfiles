@@ -1,19 +1,16 @@
-# Path to your oh-my-zsh installation.
+# adi's zshrc
+
+# ohmyzsh config
 export ZSH="$HOME/.oh-my-zsh"
-
 ZSH_THEME="alanpeabody"
-
 zstyle ':omz:update' mode auto
-
-plugins=()
-
 source $ZSH/oh-my-zsh.sh
 
+# aliases
 alias zshconfig="vi ~/.dotfiles/.zshrc"
-alias ohmyzsh="vi ~/.oh-my-zsh"
 
+# nvm config
 export PATH="$PATH:/usr/local/share/npm/bin"
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -23,6 +20,7 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/opt/spaceship/spaceship.zsh
 
+# miniconda config
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/Users/adityanaithani/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -38,3 +36,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# aliases
+alias zconfig="vi ~/.dotfiles/.zshrc"
+alias dotfiles="cd ~/.dotfiles"
