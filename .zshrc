@@ -10,13 +10,15 @@ plugins=()
 source $ZSH/oh-my-zsh.sh
 
 alias zshconfig="vi ~/.dotfiles/.zshrc"
-# alias ohmyzsh="vi ~/.oh-my-zsh"
+alias ohmyzsh="vi ~/.oh-my-zsh"
 
 export PATH="$PATH:/usr/local/share/npm/bin"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# plugins
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/opt/spaceship/spaceship.zsh
