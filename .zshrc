@@ -1,5 +1,7 @@
 # adi's .zshrc
 
+source ~/.bash_profile
+
 # ohmyzsh config
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="alanpeabody"
@@ -39,5 +41,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # aliases
-alias zconfig="vi ~/.dotfiles/.zshrc"
-alias dotfiles="cd ~/.dotfiles"
+alias zconf="vi ~/.dotfiles/.zshrc"
+alias df="cd ~/.dotfiles"
+alias sconf="vi ~/.ssh/config"
