@@ -1,4 +1,4 @@
-# adi's .zshrc
+# aditya's .zshrc
 
 source ~/.bash_profile
 
@@ -44,4 +44,6 @@ export NVM_DIR="$HOME/.nvm"
 alias zconf="vi ~/.dotfiles/.zshrc"
 alias df="cd ~/.dotfiles"
 alias sconf="vi ~/.ssh/config"
+
 ## music
+
