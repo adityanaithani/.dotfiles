@@ -51,11 +51,10 @@ alias df="cd ~/.dotfiles"
 ## ls
 alias l='ls -lah'
 alias ls='ls -G'
-alias la='la-lAh'
+alias la='la -lAh'
 ## Git
 alias g='git'
-alias ga='git add'
-alias gad='git add .'
+alias ga='git add .'
 alias gcm='git commit -m'
 ## Beets
 alias bconf="vi ~/.config/beets/config.yaml"
@@ -68,3 +67,7 @@ alias mproc='$HOME/Music/process.sh --delete $HOME/Music/Rips'
 # Environment Variables
 export EDITOR="vi -e"
 export VISUAL="vi"
+
+fpath+=~/.zfunc; autoload -Uz compinit; compinit
+
+zstyle ':completion:*' menu select
