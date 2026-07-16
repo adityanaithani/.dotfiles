@@ -54,8 +54,10 @@ alias ls='ls -G'
 alias la='la -lAh'
 ## Git
 alias g='git'
+alias gs='git status'
 alias ga='git add .'
 alias gcm='git commit -m'
+alias gp='git push'
 ## Beets
 alias bconf="vi ~/.config/beets/config.yaml"
 alias bart='beet list -f \$artist | grep -E ",|&|/| and |-"'
