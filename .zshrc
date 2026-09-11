@@ -63,12 +63,14 @@ alias bconf="vi ~/.config/beets/config.yaml"
 alias bart='beet list -f \$artist | grep -E ",|&|/| and |-"'
 alias bgen='beet list -a -f \$genres | sort | uniq'
 alias mproc='$HOME/Music/process.sh --delete $HOME/Music/Rips'
-## Git
-
-
+## Pi
+alias pconf="cd ~/.pi/agent/"
+alias pset="cd ~/.dotfiles/ignored/"
 # Environment Variables
 export EDITOR="vi -e"
 export VISUAL="vi"
+# API Keys
+export DEEPGRAM_API_KEY="aa141ec08e110cbcb4cc63bcf24fc7dd6a1669c7"
 
 fpath+=~/.zfunc; autoload -Uz compinit; compinit
 
