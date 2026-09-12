@@ -65,7 +65,6 @@ alias bgen='beet list -a -f \$genres | sort | uniq'
 alias mproc='$HOME/Music/process.sh --delete $HOME/Music/Rips'
 ## Pi
 alias pconf="cd ~/.pi/agent/"
-alias pset="cd ~/.dotfiles/ignored/"
 # Environment Variables
 export EDITOR="vi -e"
 export VISUAL="vi"
