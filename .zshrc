@@ -74,3 +74,4 @@ export DEEPGRAM_API_KEY="aa141ec08e110cbcb4cc63bcf24fc7dd6a1669c7"
 fpath+=~/.zfunc; autoload -Uz compinit; compinit
 
 zstyle ':completion:*' menu select
+export PATH="/usr/local/sbin:$PATH"
